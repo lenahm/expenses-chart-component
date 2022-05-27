@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expenses Chart Component</title>
+</head>
+<body class="flex">
+    <div class="container">
+        <div id="heading" class="flex">
+            <div class="flex flex-column">
+                <small>My balance</small>
+                <p>$921.48</p>
+            </div>
+            <img src="img/logo.svg">
+        </div>
+        <div id="spending-overview" class="flex flex-column">
+            <h3>Spending - Last 7 days</h3>
+            <div class="bars flex">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <hr>
+            <div id="month-overview" class="flex">
+                <div id="month-total" class="flex flex-column">
+                    <small>Total this month</small>
+                    <h1>$478.33</h1>
+                </div>
+                <div id="month-percentage" class="flex flex-column">
+                    <p>+2.4%</p>
+                    <small>from last month</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

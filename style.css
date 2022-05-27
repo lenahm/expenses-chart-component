@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+:root {
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%); 
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%); 
+    --very-pale-orange: hsl(33, 100%, 98%); 
+}
+
+/* main styling */
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    color: var(--dark-brown);
+    background-color: var(--cream);
+}
+
+.container {
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+}
+
+/* heading */
+
+#heading {
+    justify-content: space-between;
+    background-color: var(--soft-red);
+}
+
+/* spending overview */
+
+#spending-overview {
+    background-color: var(--very-pale-orange);
+}
+
+#spending-overview #month-overview {
+    justify-content: space-between;
+}
+
+#spending-overview #month-overview #month-total {
+    align-self: flex-start;
+}
+
+#spending-overview #month-overview #month-percentage {
+    align-self: flex-end;
+}
+
+/* utility classes */
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
