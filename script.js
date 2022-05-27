@@ -7,7 +7,7 @@ function fillTodaysBarCyan() {
 
     bars.forEach(bar => {
         if (bar.id === todayAbbreviation) {
-            bar.childNodes[1].style.backgroundColor = 'var(--cyan)';
+            bar.childNodes[3].style.backgroundColor = 'var(--cyan)';
         }
     }); 
 }
@@ -20,9 +20,20 @@ function fillBarsHeight() {
             bars.forEach(bar => {
                 data.forEach(date => {
                     if (bar.id === date.day) {
-                        bar.childNodes[1].style.height = `${date.amount}px`;
+                        bar.childNodes[3].style.height = `${date.amount}px`;
                     }
                 }); 
             }); 
         });
 }
+
+const fills = document.querySelectorAll('.fill'); 
+
+fills.forEach(fill => fill.addEventListener('mouseenter', () => {
+    const amount = `$${fill.style.height.replace('px', '')}`;
+    fill.previousElementSibling.innerHTML = amount;
+}))
+
+fills.forEach(fill => fill.addEventListener('mouseleave', () => {
+    fill.previousElementSibling.innerHTML = '';
+})); 
