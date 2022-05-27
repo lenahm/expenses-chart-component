@@ -1,5 +1,3 @@
-// console.log(document.querySelectorAll('.bar').forEach(node => console.log(node.id)));
-
 fillTodaysBarCyan();
 
 function fillTodaysBarCyan() {
