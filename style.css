@@ -132,3 +132,19 @@ hr {
 .flex-column {
     flex-direction: column;
 }
+
+/* responsive design for smartphones */
+
+@media(max-width: 400px) {
+    .container {
+        width: 350px;
+    }
+
+    #spending-overview {
+        padding: 20px 10px 30px 10px;
+    }
+
+    #spending-overview #bars .bar {
+        width: 35px;
+    }
+}
