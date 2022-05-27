@@ -32,21 +32,57 @@ body {
     margin: 100px auto;
 }
 
+small,
+hr {
+    font-size: 0.7rem;
+    opacity: 0.6;
+}
+
 /* heading */
 
 #heading {
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    color: var(--very-pale-orange);
     background-color: var(--soft-red);
+    border-radius: 20px;
+}
+
+#heading > div > p {
+    margin-top: 5px;
+    font-weight: 700;
 }
 
 /* spending overview */
 
 #spending-overview {
+    padding: 20px 25px 30px 25px;
     background-color: var(--very-pale-orange);
+    border-radius: 20px;
+}
+
+#spending-overview #bars {
+    gap: 10px;
+    margin: 40px 10px 20px 10px;
+}
+
+#spending-overview #bars .bar {
+    width: 40px;
+    height: 100px;
+    margin-bottom: 5px;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+}
+
+#spending-overview #bars div {
+    text-align: center;
 }
 
 #spending-overview #month-overview {
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 #spending-overview #month-overview #month-total {
@@ -55,6 +91,7 @@ body {
 
 #spending-overview #month-overview #month-percentage {
     align-self: flex-end;
+    text-align: right;
 }
 
 /* utility classes */
