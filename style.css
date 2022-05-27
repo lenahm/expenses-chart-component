@@ -70,8 +70,11 @@ hr {
 
 #spending-overview #bars .bar {
     width: 40px;
-    height: 100px;
     margin-bottom: 5px;
+}
+
+#spending-overview #bars .bar .fill {
+    height: 100px;
     background-color: var(--soft-red);
     border-radius: 5px;
 }
